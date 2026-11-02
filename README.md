@@ -38,6 +38,12 @@ website ([pandora-on.com](https://pandora-on.com/login)) or in the
 mobile app. For this fork's domain change and installation instructions, see
 [Switching to pandora-on.com](INSTALL.md).
 
+You can choose `pandora-on.com` (new, default) or `pro.p-on.ru` (legacy) under
+**Configure → Integration options → API server**. Submit the form and select
+**Save changes**. The choice applies to authentication, vehicle data, WebSockets,
+and web translations for that account. It is also available during setup and
+reauthentication.
+
 The integration currently supports:
 
 - [Device Tracker](#platform_device_tracker): Vehicle location.

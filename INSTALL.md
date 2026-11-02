@@ -1,9 +1,21 @@
 # Switching to pandora-on.com
 
-This change replaces the unreachable domain `pro.p-on.ru` with
-`https://pandora-on.com` for authentication, the HTTP API, and WebSockets.
-Translations are also loaded from the new domain. The installed Python library
-is not modified.
+This integration lets you choose `https://pandora-on.com` (new) or
+`https://pro.p-on.ru` (legacy) as the server for authentication, the HTTP API,
+and WebSockets. Translations are also loaded from the selected domain. The
+installed Python library is not modified.
+
+## Choosing the server
+
+Open **Settings → Devices & services → Pandora Car Alarm System → Configure**.
+Select **Integration options**, choose an **API server**, submit the form, and
+select **Save changes** in the options menu. The integration reloads using the
+selected server. The same selection is available during initial setup and
+reauthentication.
+
+Accounts without a saved selection continue to use `https://pandora-on.com`.
+Each account can use a different server. There is no automatic fallback to the
+other server.
 
 ## Installation
 
@@ -13,7 +25,7 @@ is not modified.
 3. Restart Home Assistant.
 
 You do not need to delete the existing integration. Your username and password
-are retained. The modified integration will send them to `pandora-on.com`.
+are retained. The integration sends them to the selected server.
 A later HACS update may overwrite this local change.
 
 ## Validation

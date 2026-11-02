@@ -14,10 +14,14 @@
           "language": "Data translation language",
           "password": "Password",
           "username": "Username",
-          "verify_ssl": "Verify SSL certificates"
+          "verify_ssl": "Verify SSL certificates",
+          "api_url": "API server"
         },
         "description": "Enter your credentials for your Pandora Online account.",
-        "title": "Authentication"
+        "title": "Authentication",
+        "data_description": {
+          "api_url": "Select the server for authentication, vehicle data and WebSockets. Changing the server reloads the integration."
+        }
       }
     }
   },
@@ -905,7 +909,11 @@
           "language": "Data translation language",
           "method": "Method of updating devices' data",
           "polling_interval": "HTTP polling interval",
-          "verify_ssl": "Verify SSL certificates"
+          "verify_ssl": "Verify SSL certificates",
+          "api_url": "API server"
+        },
+        "data_description": {
+          "api_url": "Select the server for authentication, vehicle data and WebSockets. Changing the server reloads the integration."
         }
       }
     }

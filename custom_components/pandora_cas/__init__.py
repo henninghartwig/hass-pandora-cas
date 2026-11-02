@@ -79,7 +79,12 @@ from custom_components.pandora_cas.translations import (
     get_config_entry_language,
     get_web_translations_value,
 )
-from custom_components.pandora_cas.api import PandoraOnlineAccount
+from custom_components.pandora_cas.api import (
+    API_BASE_URL,
+    API_SERVERS,
+    CONF_API_URL,
+    PandoraOnlineAccount,
+)
 from pandora_cas.data import CurrentState, TrackingEvent, TrackingPoint
 from pandora_cas.device import PandoraOnlineDevice
 from pandora_cas.enums import PrimaryEventID
@@ -89,6 +94,7 @@ _LOGGER: Final = logging.getLogger(__name__)
 
 BASE_INTEGRATION_OPTIONS_SCHEMA: Final = vol.Schema(
     {
+        vol.Optional(CONF_API_URL, default=API_BASE_URL): vol.In(API_SERVERS),
         vol.Optional(CONF_VERIFY_SSL, default=True): cv.boolean,
         vol.Optional(CONF_FORCE_LOCK_ICONS, default=False): cv.boolean,
         vol.Optional(
@@ -268,6 +274,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     # Instantiate account object
     session = async_create_clientsession(hass, verify_ssl=options[CONF_VERIFY_SSL])
     account = PandoraOnlineAccount(
+        base_url=options[CONF_API_URL],
         username=username,
         password=data[CONF_PASSWORD],
         access_token=access_token,
@@ -286,6 +293,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
             language=get_config_entry_language(entry),
             session=session,
             ignore_recency=True,
+            base_url=account.BASE_URL,
         )
     except BaseException as exc:
         _LOGGER.error(f"Translations download failed: {exc}", exc_info=exc)
@@ -373,6 +381,7 @@ async def async_migrate_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         # Update unique ID to user ID
         new_options.setdefault(CONF_VERIFY_SSL, True)
         account = PandoraOnlineAccount(
+            base_url=new_options.get(CONF_API_URL, API_BASE_URL),
             username=new_data[CONF_USERNAME],
             password=new_data[CONF_PASSWORD],
             access_token=new_data.get(CONF_ACCESS_TOKEN),

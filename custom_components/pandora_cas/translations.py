@@ -59,6 +59,7 @@ async def async_load_web_translations(
     language: str,
     session: aiohttp.ClientSession | bool | None = None,
     ignore_recency: bool = False,
+    base_url: str = API_BASE_URL,
 ) -> dict[str, str]:
     """Load web translations."""
     if (language := language.lower()) == "last_update":
@@ -132,7 +133,7 @@ async def async_load_web_translations(
 
     try:
         async with session.get(
-            f"{API_BASE_URL}/local/web/{language}.json"
+            f"{base_url}/local/web/{language}.json"
         ) as response:
             new_data = await response.json()
     except (aiohttp.ClientError, JSONDecodeError):
@@ -154,7 +155,9 @@ async def async_load_web_translations(
             f"for language {language}, falling "
             f"back to {DEFAULT_LANGUAGE}",
         )
-        return await async_load_web_translations(hass, DEFAULT_LANGUAGE)
+        return await async_load_web_translations(
+            hass, DEFAULT_LANGUAGE, session=session, base_url=base_url
+        )
 
     if not isinstance(language_data, dict):
         saved_data[language] = language_data = {}

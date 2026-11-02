@@ -41,7 +41,6 @@ from homeassistant.helpers.translation import async_get_translations
 
 from custom_components.pandora_cas import (
     async_run_pandora_coro,
-    ENTRY_DATA_SCHEMA,
     BASE_INTEGRATION_OPTIONS_SCHEMA,
     DEVICE_OPTIONS_SCHEMA,
 )
@@ -59,7 +58,12 @@ from custom_components.pandora_cas.const import (
     MIN_EFFECTIVE_READ_TIMEOUT,
     DEFAULT_LANGUAGE,
 )
-from custom_components.pandora_cas.api import PandoraOnlineAccount
+from custom_components.pandora_cas.api import (
+    API_BASE_URL,
+    API_SERVERS,
+    CONF_API_URL,
+    PandoraOnlineAccount,
+)
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -93,6 +97,7 @@ STEP_USER_SCHEMA: Final = vol.Schema(
     {
         vol.Required(CONF_USERNAME): cv.string,
         vol.Required(CONF_PASSWORD): cv.string,
+        vol.Optional(CONF_API_URL, default=API_BASE_URL): vol.In(API_SERVERS),
         vol.Optional(CONF_VERIFY_SSL, default=True): cv.boolean,
     }
 )
@@ -113,6 +118,7 @@ class PandoraCASConfigFlow(ConfigFlow, domain=DOMAIN):
         if user_input is not None:
             # leave async_get_clientsession because used only once
             account = PandoraOnlineAccount(
+                base_url=user_input.get(CONF_API_URL, API_BASE_URL),
                 username=user_input[CONF_USERNAME],
                 password=user_input[CONF_PASSWORD],
                 access_token=user_input.get(CONF_ACCESS_TOKEN),
@@ -148,6 +154,7 @@ class PandoraCASConfigFlow(ConfigFlow, domain=DOMAIN):
                         },
                         options={
                             **entry.options,
+                            CONF_API_URL: user_input.get(CONF_API_URL, API_BASE_URL),
                             CONF_VERIFY_SSL: user_input[CONF_VERIFY_SSL],
                         },
                     )
@@ -162,7 +169,10 @@ class PandoraCASConfigFlow(ConfigFlow, domain=DOMAIN):
                 user_input[CONF_ACCESS_TOKEN] = account.access_token
 
                 # Clear user input from data that is destined for options
-                options = {CONF_VERIFY_SSL: user_input.pop(CONF_VERIFY_SSL, True)}
+                options = {
+                    CONF_VERIFY_SSL: user_input.pop(CONF_VERIFY_SSL, True),
+                    CONF_API_URL: user_input.pop(CONF_API_URL, API_BASE_URL),
+                }
 
                 return self.async_create_entry(
                     title=user_input[CONF_USERNAME],
@@ -172,7 +182,7 @@ class PandoraCASConfigFlow(ConfigFlow, domain=DOMAIN):
 
             errors = {"base": error}
             schema = self.add_suggested_values_to_schema(
-                ENTRY_DATA_SCHEMA,
+                STEP_USER_SCHEMA,
                 user_input,
             )
         elif entry := self._reauth_entry:
@@ -183,6 +193,7 @@ class PandoraCASConfigFlow(ConfigFlow, domain=DOMAIN):
                     CONF_USERNAME: entry.data[CONF_USERNAME],
                     CONF_PASSWORD: "",
                     CONF_VERIFY_SSL: entry.options.get(CONF_VERIFY_SSL, True),
+                    CONF_API_URL: entry.options.get(CONF_API_URL, API_BASE_URL),
                 },
             )
         else:
