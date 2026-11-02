@@ -8,15 +8,6 @@
 > Automate Pandora™, PanDECT<sup>®</sup>, and Benish GUARD Force alarm systems
 > with Home Assistant.
 >
-> [![HACS](https://img.shields.io/badge/HACS-Default-green.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
-> [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-> [![Maintained](https://img.shields.io/badge/Maintained-Yes-green.svg?style=for-the-badge)](https://github.com/alryaz/hass-pandora-cas/graphs/commit-activity)
-
-> 💵 **Support project development**<br>
-> [![Donate via YooMoney](https://img.shields.io/badge/YooMoney-8B3FFD.svg?style=for-the-badge)](https://yoomoney.ru/to/410012369233217)
-> [![Donate via Tinkoff](https://img.shields.io/badge/Tinkoff-F8D81C.svg?style=for-the-badge)](https://www.tinkoff.ru/cf/3g8f1RTkf5G)
-> [![Donate via Sberbank](https://img.shields.io/badge/Sberbank-green.svg?style=for-the-badge)](https://www.sberbank.com/ru/person/dl/jc?linkname=3pDgknI7FY3z7tJnN)
-> [![Donate via DonationAlerts](https://img.shields.io/badge/DonationAlerts-fbaf2b.svg?style=for-the-badge)](https://www.donationalerts.com/r/alryaz)
 >
 > 💬 **Technical support**<br>
 > [![Telegram group](https://img.shields.io/endpoint?url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Falryaz_ha_addons&style=for-the-badge)](https://telegram.dog/alryaz_ha_addons)
@@ -24,7 +15,7 @@
 > 🥇 **Inspiration and original developer**<br>
 > [![GitHub repository](https://img.shields.io/badge/GitHub-turbulator%2Fpandora--cas-blue?style=for-the-badge)](https://github.com/turbulator/pandora-cas)
 
-[![My Home Assistant](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?repository=hass-pandora-cas&owner=alryaz&category=Integration)
+[![My Home Assistant](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?repository=hass-pandora-cas&owner=henninghartwig&category=Integration)
 
 Your car can also be part of your smart home. This integration lets you monitor,
 control, and automate a vehicle equipped with a Pandora alarm system. After
