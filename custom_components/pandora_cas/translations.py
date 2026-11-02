@@ -20,6 +20,7 @@ from homeassistant.exceptions import HomeAssistantError
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 from homeassistant.helpers.storage import Store
 
+from custom_components.pandora_cas.api import API_BASE_URL
 from custom_components.pandora_cas.const import (
     DEFAULT_LANGUAGE,
     DATA_WEB_TRANSLATIONS,
@@ -131,7 +132,7 @@ async def async_load_web_translations(
 
     try:
         async with session.get(
-            f"https://p-on.ru/local/web/{language}.json"
+            f"{API_BASE_URL}/local/web/{language}.json"
         ) as response:
             new_data = await response.json()
     except (aiohttp.ClientError, JSONDecodeError):

@@ -59,7 +59,7 @@ from custom_components.pandora_cas.const import (
     MIN_EFFECTIVE_READ_TIMEOUT,
     DEFAULT_LANGUAGE,
 )
-from pandora_cas.account import PandoraOnlineAccount
+from custom_components.pandora_cas.api import PandoraOnlineAccount
 
 _LOGGER = logging.getLogger(__name__)
 

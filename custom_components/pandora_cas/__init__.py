@@ -79,7 +79,7 @@ from custom_components.pandora_cas.translations import (
     get_config_entry_language,
     get_web_translations_value,
 )
-from pandora_cas.account import PandoraOnlineAccount
+from custom_components.pandora_cas.api import PandoraOnlineAccount
 from pandora_cas.data import CurrentState, TrackingEvent, TrackingPoint
 from pandora_cas.device import PandoraOnlineDevice
 from pandora_cas.enums import PrimaryEventID
