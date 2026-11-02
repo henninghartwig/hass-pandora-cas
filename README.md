@@ -3,52 +3,53 @@
   <img alt="Home Assistant + Pandora" src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/header_light.png">
 </picture>
 
-# _Pandora Car Alarm System_ и _Benish GPS_ для _Home Assistant_
+# _Pandora Car Alarm System_ and _Benish GPS_ for _Home Assistant_
 
-> Автоматизация управления охранными системами Pandora™, PanDECT<sup>®</sup>
-> и Benish GUARD Force в Home Assistant.
+> Automate Pandora™, PanDECT<sup>®</sup>, and Benish GUARD Force alarm systems
+> with Home Assistant.
 >
-> [![hacs_badge](https://img.shields.io/badge/HACS-Default-green.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
-> [![Лицензия](https://img.shields.io/badge/%D0%9B%D0%B8%D1%86%D0%B5%D0%BD%D0%B7%D0%B8%D1%8F-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-> [![Поддержка](https://img.shields.io/badge/%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%B8%D0%B2%D0%B0%D0%B5%D1%82%D1%81%D1%8F%3F-%D0%B4%D0%B0-green.svg?style=for-the-badge)](https://github.com/alryaz/hass-pandora-cas/graphs/commit-activity)
+> [![HACS](https://img.shields.io/badge/HACS-Default-green.svg?style=for-the-badge)](https://github.com/custom-components/hacs)
+> [![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+> [![Maintained](https://img.shields.io/badge/Maintained-Yes-green.svg?style=for-the-badge)](https://github.com/alryaz/hass-pandora-cas/graphs/commit-activity)
 
-> 💵 **Пожертвование на развитие проекта**  
-> [![Пожертвование YooMoney](https://img.shields.io/badge/YooMoney-8B3FFD.svg?style=for-the-badge)](https://yoomoney.ru/to/410012369233217)
-> [![Пожертвование Тинькофф](https://img.shields.io/badge/Tinkoff-F8D81C.svg?style=for-the-badge)](https://www.tinkoff.ru/cf/3g8f1RTkf5G)
-> [![Пожертвование Cбербанк](https://img.shields.io/badge/Сбербанк-green.svg?style=for-the-badge)](https://www.sberbank.com/ru/person/dl/jc?linkname=3pDgknI7FY3z7tJnN)
-> [![Пожертвование DonationAlerts](https://img.shields.io/badge/DonationAlerts-fbaf2b.svg?style=for-the-badge)](https://www.donationalerts.com/r/alryaz)
+> 💵 **Support project development**<br>
+> [![Donate via YooMoney](https://img.shields.io/badge/YooMoney-8B3FFD.svg?style=for-the-badge)](https://yoomoney.ru/to/410012369233217)
+> [![Donate via Tinkoff](https://img.shields.io/badge/Tinkoff-F8D81C.svg?style=for-the-badge)](https://www.tinkoff.ru/cf/3g8f1RTkf5G)
+> [![Donate via Sberbank](https://img.shields.io/badge/Sberbank-green.svg?style=for-the-badge)](https://www.sberbank.com/ru/person/dl/jc?linkname=3pDgknI7FY3z7tJnN)
+> [![Donate via DonationAlerts](https://img.shields.io/badge/DonationAlerts-fbaf2b.svg?style=for-the-badge)](https://www.donationalerts.com/r/alryaz)
 >
-> 💬 **Техническая поддержка**  
-> [![Группа в Telegram](https://img.shields.io/endpoint?url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Falryaz_ha_addons&style=for-the-badge)](https://telegram.dog/alryaz_ha_addons)
+> 💬 **Technical support**<br>
+> [![Telegram group](https://img.shields.io/endpoint?url=https%3A%2F%2Ftg.sumanjay.workers.dev%2Falryaz_ha_addons&style=for-the-badge)](https://telegram.dog/alryaz_ha_addons)
 >
-> 🥇 **Вдохновитель, оригинальный разработчик**  
-> [![Репозиторий GitHub](https://img.shields.io/badge/GitHub-turbulator%2Fpandora--cas-blue?style=for-the-badge)](https://github.com/turbulator/pandora-cas)
+> 🥇 **Inspiration and original developer**<br>
+> [![GitHub repository](https://img.shields.io/badge/GitHub-turbulator%2Fpandora--cas-blue?style=for-the-badge)](https://github.com/turbulator/pandora-cas)
 
 [![My Home Assistant](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?repository=hass-pandora-cas&owner=alryaz&category=Integration)
 
-Автомобиль тоже может быть частью умного дома. С помощью этого компонента вы
-сможете отслеживать состояние, управлять и автоматизировать свой автомобиль,
-если он оборудован охранной системой Pandora. После настройки ваши устройства
-Pandora™ и PanDECT<sup>®</sup> автоматически добавятся в _Home Assistant_.
+Your car can also be part of your smart home. This integration lets you monitor,
+control, and automate a vehicle equipped with a Pandora alarm system. After
+setup, your Pandora™ and PanDECT<sup>®</sup> devices are automatically added to
+_Home Assistant_.
 
-Компонент реализует доступ к API официального приложения Pandora, _Pandora
-Connect_, и реализует часть его функционала. Для настройки Вам следует использовать те же авторизационные данные, что вы
-используете на сайте Pandora ([pro.p-on.ru](https://pro.p-on.ru)), или в
-мобильном приложении
-[Pandora Online / Connect / Pro](https://play.google.com/store/apps/details?id=ru.alarmtrade.pandora&hl=ru).
+The integration accesses the API used by the official _Pandora Connect_ app and
+implements some of its features. Use the same credentials as on the Pandora
+website ([pandora-on.com](https://pandora-on.com/login)) or in the
+[Pandora Online / Connect / Pro](https://play.google.com/store/apps/details?id=ru.alarmtrade.pandora&hl=ru)
+mobile app. For this fork's domain change and installation instructions, see
+[Switching to pandora-on.com](INSTALL.md).
 
-На данный момент компонент поддерживает:
+The integration currently supports:
 
-- [Device Tracker](#platform_device_tracker): Местоположение автомобиля.
-- [Sensors](#platform_sensor): Температура, скорость, тахометр и т.д.
-- [Binary Sensors](#platform_binary_sensor): Статусы открытия, движения, и т.д.
-- [Switches](#platform_switch): Работа двигателя, активная охрана, и т.д.
-- [Lock](#platform_lock): Постановка на охрану
-- [Number](#platform_number): Регулировка климатических систем
-- [Services](#services_provided): Команды, например: открыть/закрыть,
-  завести/заглушить и др.
+- [Device Tracker](#platform_device_tracker): Vehicle location.
+- [Sensors](#platform_sensor): Temperature, speed, engine RPM, and more.
+- [Binary Sensors](#platform_binary_sensor): Door, movement, and other states.
+- [Switches](#platform_switch): Engine, active security, and other controls.
+- [Lock](#platform_lock): Arming the alarm system.
+- [Number](#platform_number): Climate control adjustments.
+- [Services](#services_provided): Commands such as locking, unlocking, starting,
+  and stopping the engine.
 
-Компонент успешно протестирован и отработан на системах:
+The integration has been successfully tested with these systems:
 
 - PanDECT X-1700 BT
 - PanDECT X-1900 BT
@@ -59,378 +60,355 @@ Connect_, и реализует часть его функционала. Для
 - Pandora DX-9X LoRa + NAV-10
 - Pandora DXL-4970
 - Pandora DXL-5570
-- Pandora NAV-08 _(маячок)_
+- Pandora NAV-08 _(beacon)_
 - Pandora VX-4G GPS
-- _[Сообщите о Вашем успехе!](mailto:alryaz@alryaz.com?subject=Pandora%20Car%20Alarm%20System%20%D0%B4%D0%BB%D1%8F%20Home%20Assistant%20-%20%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0%20%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0D%0A%0D%0A%D0%9F%D0%BE%D0%B4%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B0%D1%8E%2C%20%D1%87%D1%82%D0%BE%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82%20%D1%81%20%D0%BC%D0%BE%D0%B8%D0%BC%20%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%D0%BC%20...!%0D%0A%0D%0A(%D0%95%D1%81%D0%BB%D0%B8%20%D1%8D%D1%82%D0%BE%20%D0%BD%D0%B5%20%D1%82%D0%B0%D0%BA%2C%20%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%2C%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D0%92%D0%B0%D1%88%D0%B8%20%D0%BD%D0%B0%D0%B1%D0%BB%D1%8E%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BE%20%D0%BD%D0%B5%D0%BF%D0%BE%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0%D1%85))_
+- _[Report your success!](mailto:alryaz@alryaz.com?subject=Pandora%20Car%20Alarm%20System%20%D0%B4%D0%BB%D1%8F%20Home%20Assistant%20-%20%D0%9F%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0%20%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%B0&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%0D%0A%0D%0A%D0%9F%D0%BE%D0%B4%D1%82%D0%B2%D0%B5%D1%80%D0%B6%D0%B4%D0%B0%D1%8E%2C%20%D1%87%D1%82%D0%BE%20%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%D0%B5%D1%82%20%D1%81%20%D0%BC%D0%BE%D0%B8%D0%BC%20%D1%83%D1%81%D1%82%D1%80%D0%BE%D0%B9%D1%81%D1%82%D0%B2%D0%BE%D0%BC%20...!%0D%0A%0D%0A(%D0%95%D1%81%D0%BB%D0%B8%20%D1%8D%D1%82%D0%BE%20%D0%BD%D0%B5%20%D1%82%D0%B0%D0%BA%2C%20%D0%BE%D0%BF%D0%B8%D1%88%D0%B8%D1%82%D0%B5%2C%20%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D1%83%D0%B9%D1%81%D1%82%D0%B0%2C%20%D0%92%D0%B0%D1%88%D0%B8%20%D0%BD%D0%B0%D0%B1%D0%BB%D1%8E%D0%B4%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BE%20%D0%BD%D0%B5%D0%BF%D0%BE%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0%D1%85))_
 
-## Скриншоты
+## Screenshots
 
 <details>
-    <summary>Панель со всеми поддерживаемыми элементами</summary> 
-    <img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_default.png" alt="Скриншот: Панель со всеми поддерживаемыми элементами">
+    <summary>Dashboard with all supported entities</summary>
+    <img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_default.png" alt="Screenshot: Dashboard with all supported entities">
 </details>
 <details>
-    <summary>Вызов службы из панели разработчика</summary> 
-    <img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_service_call.png" alt="Скриншот: Вызов службы из панели разработчика">
+    <summary>Calling a service from Developer Tools</summary>
+    <img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_service_call.png" alt="Screenshot: Calling a service from Developer Tools">
 </details>
 <details>
-    <summary>Карточка устройства (тёмная тема)</summary> 
-    <img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/stack_default_dark.png" alt="Скриншот: Карточка устройства (тёмная тема)">
+    <summary>Device card (dark theme)</summary>
+    <img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/stack_default_dark.png" alt="Screenshot: Device card (dark theme)">
 </details>
 <details>
-    <summary>Доступные виды курсоров трекера</summary>
+    <summary>Available tracker cursor styles</summary>
     <ul>
-        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/arrow.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/arrow.svg" width="32" height="32" alt="Курсор: arrow"></a> &mdash; <em>arrow</em></li>
-        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/bird.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/bird.svg" width="32" height="32" alt="Курсор: bird"></a> &mdash; <em>bird</em></li>
-        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/car.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/car.svg" width="32" height="32" alt="Курсор: car"></a> &mdash; <em>car</em></li>
-        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/helicopter.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/helicopter.svg" width="32" height="32" alt="Курсор: helicopter"></a> &mdash; <em>helicopter</em></li>
-        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/moto.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/moto.svg" width="32" height="32" alt="Курсор: moto"></a> &mdash; <em>moto</em></li>
-        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/pierced_heart.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/pierced_heart.svg" width="32" height="32" alt="Курсор: pierced_heart"></a> &mdash; <em>pierced_heart</em></li>
-        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/plane.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/plane.svg" width="32" height="32" alt="Курсор: plane"></a> &mdash; <em>plane</em></li>
-        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/quadrocopter.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/quadrocopter.svg" width="32" height="32" alt="Курсор: quadrocopter"></a> &mdash; <em>quadrocopter</em></li>
-        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/rocket.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/rocket.svg" width="32" height="32" alt="Курсор: rocket"></a> &mdash; <em>rocket</em></li>
-        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/truck.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/truck.svg" width="32" height="32" alt="Курсор: truck"></a> &mdash; <em>truck</em></li>
+        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/arrow.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/arrow.svg" width="32" height="32" alt="Cursor: arrow"></a> &mdash; <em>arrow</em></li>
+        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/bird.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/bird.svg" width="32" height="32" alt="Cursor: bird"></a> &mdash; <em>bird</em></li>
+        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/car.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/car.svg" width="32" height="32" alt="Cursor: car"></a> &mdash; <em>car</em></li>
+        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/helicopter.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/helicopter.svg" width="32" height="32" alt="Cursor: helicopter"></a> &mdash; <em>helicopter</em></li>
+        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/moto.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/moto.svg" width="32" height="32" alt="Cursor: moto"></a> &mdash; <em>moto</em></li>
+        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/pierced_heart.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/pierced_heart.svg" width="32" height="32" alt="Cursor: pierced_heart"></a> &mdash; <em>pierced_heart</em></li>
+        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/plane.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/plane.svg" width="32" height="32" alt="Cursor: plane"></a> &mdash; <em>plane</em></li>
+        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/quadrocopter.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/quadrocopter.svg" width="32" height="32" alt="Cursor: quadrocopter"></a> &mdash; <em>quadrocopter</em></li>
+        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/rocket.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/rocket.svg" width="32" height="32" alt="Cursor: rocket"></a> &mdash; <em>rocket</em></li>
+        <li><a href="https://github.com/alryaz/hass-pandora-cas/blob/master/custom_components/pandora_cas/cursors/truck.svg" target="_blank"><img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/custom_components/pandora_cas/cursors/truck.svg" width="32" height="32" alt="Cursor: truck"></a> &mdash; <em>truck</em></li>
     </ul>
 </details>
 
-## Установка
+## Installation
 
 ### Home Assistant Community Store
 
-> 🎉  **Рекомендованный метод установки.**
+> 🎉 **Recommended installation method.**
 
-[![Открыть Ваш Home Assistant и открыть репозиторий внутри Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=alryaz&repository=hass-pandora-cas&category=integration)
+[![Open the repository in your Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=alryaz&repository=hass-pandora-cas&category=integration)
 
-1. Установите HACS ([инструкция по установке на оф. сайте](https://hacs.xyz/docs/installation/installation/)).
-2. Добавьте репозиторий в список дополнительных:
-    1. Откройте главную страницу _HACS_.
-    2. Откройте раздел _Интеграции (Integrations)_.
-    3. Нажмите три точки сверху справа (дополнительное меню).
-    4. Выберите _Пользовательские репозитории_.
-    5. Скопируйте `https://github.com/alryaz/hass-pandora-cas` в поле ввода
-    6. Выберите _Интеграция (Integration)_ в выпадающем списке.
-    7. Нажмите _Добавить (Add)_.
-3. Найдите `Pandora Car Alarm System` в поиске по интеграциям.
-4. Установите последнюю версию компонента, нажав на кнопку `Установить` (`Install`).
-5. Перезапустите сервер _Home Assistant_.
+1. Install HACS ([official installation instructions](https://hacs.xyz/docs/installation/installation/)).
+2. Add the repository to your custom repositories:
+   1. Open the _HACS_ home page.
+   2. Open _Integrations_.
+   3. Click the three dots in the upper right corner.
+   4. Select _Custom repositories_.
+   5. Paste `https://github.com/alryaz/hass-pandora-cas` into the input field.
+   6. Select _Integration_ from the dropdown.
+   7. Click _Add_.
+3. Search for `Pandora Car Alarm System` in the integrations list.
+4. Install the latest version by clicking _Install_.
+5. Restart _Home Assistant_.
 
-### Вручную
+### Manual installation
 
-> ⚠️ **Внимание!** Данный вариант **<ins>не рекомендуется</ins>** в силу
-> сложности поддержки установленной интеграции в актуальном состоянии.
+> ⚠️ **Warning:** This method is **<ins>not recommended</ins>** because keeping
+> the installed integration up to date is more difficult.
 
-1. Скачайте [архив с актуальной стабильной версией интеграции](https://github.com/alryaz/hass-pandora-cas/releases/latest/download/pandora_cas.zip)
-2. Создайте папку (если не существует) `custom_components` внутри папки с конфигурацией Home Assistant
-3. Создайте папку `pandora_cas` внутри папки `custom_components`
-4. Извлеките содержимое скачанного архива в папку `pandora_cas`
-5. Перезапустите сервер _Home Assistant_
+1. Download the [latest stable integration archive](https://github.com/alryaz/hass-pandora-cas/releases/latest/download/pandora_cas.zip).
+2. Create a `custom_components` directory inside your Home Assistant configuration
+   directory if it does not already exist.
+3. Create a `pandora_cas` directory inside `custom_components`.
+4. Extract the downloaded archive into `pandora_cas`.
+5. Restart _Home Assistant_.
 
-## Настройка
+## Configuration
 
-### Через интерфейс _"Интеграции"_
+### Using the _Integrations_ interface
 
-Поддерживается базовый функционал конфигурации через веб-интерфейс _Home
-Assistant_. Конфигурация данным способов
-возможна без перезагрузки _Home Assistant_.
+Basic configuration through the _Home Assistant_ web interface is supported.
+This method does not require restarting _Home Assistant_.
 
-[![Установить интеграцию pandora_cas](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=pandora_cas)
+[![Set up the pandora_cas integration](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=pandora_cas)
 
 <details>
-  <summary>Вручную (если кнопка выше не работает)</summary>
-  Для перехода к настройке, выполните следующие действия:
+  <summary>Manual steps if the button above does not work</summary>
+  To open the configuration flow:
   <ol>
-    <li>Перейдите в раздел <i>Настройки</i>&nbsp;&#10230;&nbsp;<i>Интеграции</i> (`/config/integrations`)</li>
-    <li>Нажмите на круглую кнопку с плюсом внутри в нижнем правом углу экрана</li>
-    <li>Во всплывшем окне, введите в верхнем поле поиска: <b>Pandora</b>; одним из результатов должен оказаться <b>Pandora&nbsp;Car&nbsp;Alarm&nbsp;System</b> (с соответствующим логотипом торговой марки <i>Pandora Car Alarm System</i>)</li>
-    <li>Нажмите на предложенный результат</li>
-    <li>Введите имя пользователя и пароль в соответствующие поля</li>
-    <li>Нажмите внизу справа на кнопку <i>Подтвердить</i>. В случае обнаружения системой каких-либо ошибок, они будут отображены в окошке</li>
-    <li>Обновление займёт не более 5-10 секунд (проверено на Raspberry Pi 4), элементы в конфигурации по-умолчанию должны появиться на главном экране (при использовании конфигурациии Lovelace по-умолчанию)</li>
+    <li>Go to <i>Settings</i> &#10230; <i>Integrations</i> (<code>/config/integrations</code>).</li>
+    <li>Click the circular plus button in the lower right corner.</li>
+    <li>Enter <b>Pandora</b> in the search field. One of the results should be <b>Pandora Car Alarm System</b>, with the corresponding brand logo.</li>
+    <li>Select that result.</li>
+    <li>Enter your username and password in the corresponding fields.</li>
+    <li>Click <i>Submit</i> in the lower right corner. Any errors will appear in the dialog.</li>
+    <li>The update should take no more than 5–10 seconds (tested on a Raspberry Pi 4). Entities with the default configuration should appear on the main dashboard when using the default Lovelace configuration.</li>
   </ol>
 </details>
 
-### Посредством YAML
+### Using YAML
 
-> ⚠️ **Внимание!** Данный вариант **<ins>не рекомендуется</ins>** в силу
-> сложности поддержки установленной интеграции в актуальном состоянии.
+> ⚠️ **Warning:** This method is **<ins>not recommended</ins>** because keeping
+> the installed integration up to date is more difficult.
 
-Чтобы активировать компонент, добавьте эти строки в файл `configuration.yaml`:
+To enable the integration, add the following to `configuration.yaml`:
 
 ```yaml
-# Фрагмент файла configuration.yaml
+# Excerpt from configuration.yaml
 pandora_cas:
-  # Учётная запись на портале p-on.ru / pro.p-on.ru
-  password: !secret YOUR_PASSWORD  # обязательно
-  username: !secret YOUR_USERNAME  # обязательно
+  # Pandora portal account
+  password: !secret YOUR_PASSWORD  # required
+  username: !secret YOUR_USERNAME  # required
 ```
 
-Компонент также поддерживает работу с несколькими учётными записями:
+The integration also supports multiple accounts:
 
 ```yaml
 pandora_cas:
-  # Первая учётная запись
+  # First account
   - username: !secret YOUR_USERNAME_1
     password: !secret YOUR_PASSWORD_1
 
-    # Вторая учётная запись
+    # Second account
   - username: !secret YOUR_USERNAME_2
     password: !secret YOUR_PASSWORD_2
 ```
 
-### Управление объектами через интерфейс
+### Managing entities through the interface
 
 <a id="integration_entities_control"></a>
 
-Дополнительно имеется возможость (для всех вариантов конфигурации) использовать
-раздел устройств для управления
-включёнными объектами. Для этого:
+For all configuration methods, you can use the device page to manage enabled
+entities:
 
-1. Перейдите в раздел _Настройки_ &#10230;
-   _Устройства_ (`/config/devices/dashboard`)
-2. Найдите Ваше устройство (в колонке
-   _Интеграция_ будет написано `Pandora Car Alarm System`)
-3. Нажмите на найденную строку с устройством
-4. Прокрутите страницу вниз до обнаружения надписи `+[N] скрытых объектов`
-5. Нажмите на данную надпись
-6. Нажмите на любой из появившихся объектов
-7. Во всплывающем окне, переместите переключатель `Отображать объект` в положение `Вкл.`
-8. Нажмите на кнопку `Обновить` в нижнем правом углу всплывающего окна
+1. Go to _Settings_ &#10230; _Devices_ (`/config/devices/dashboard`).
+2. Find your device. Its _Integration_ column shows `Pandora Car Alarm System`.
+3. Click the device row.
+4. Scroll down to `+[N] hidden entities`.
+5. Click that label.
+6. Select one of the entities that appears.
+7. In the dialog, switch _Enable entity_ to _On_.
+8. Click _Update_ in the lower right corner of the dialog.
 
-Пример того, как выглядит наполненная страница для устройства модели X-1911BT (нажмите для увеличения):
+Example of a populated X-1911BT device page (click to enlarge):
 
-[<img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_device_card_1.png" alt="Карточка устройства X-1911BT, часть 1" width="31%">](https://github.com/alryaz/hass-pandora-cas/blob/master/images/screenshot_device_card_1.png)
-[<img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_device_card_2.png" alt="Карточка устройства X-1911BT, часть 2" width="31%">](https://github.com/alryaz/hass-pandora-cas/blob/master/images/screenshot_device_card_2.png)
-[<img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_device_card_3.png" alt="Карточка устройства X-1911BT, часть 3" width="31%">](https://github.com/alryaz/hass-pandora-cas/blob/master/images/screenshot_device_card_3.png)
+[<img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_device_card_1.png" alt="X-1911BT device card, part 1" width="31%">](https://github.com/alryaz/hass-pandora-cas/blob/master/images/screenshot_device_card_1.png)
+[<img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_device_card_2.png" alt="X-1911BT device card, part 2" width="31%">](https://github.com/alryaz/hass-pandora-cas/blob/master/images/screenshot_device_card_2.png)
+[<img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_device_card_3.png" alt="X-1911BT device card, part 3" width="31%">](https://github.com/alryaz/hass-pandora-cas/blob/master/images/screenshot_device_card_3.png)
 
-## Датчики / Переключатели / Состояния
+## Sensors / Switches / States
 
-Для привязки к автомобилю в имени объекта сенсоров используется
-идентификатор `PANDORA_ID`, в то время как в
-человеко-читаемом названии используется название автомобиля с сайта Pandora. Это
-сделано для того, чтобы при
-изменении названия автомобиля на сайте не менялись имена объектов, а значит не
-будет необходимости перенастраивать
-lovelace UI и автоматизации.
+Sensor entity IDs use the vehicle's `PANDORA_ID`, while their display names use
+the vehicle name from the Pandora website. Renaming the vehicle on the website
+therefore does not change entity IDs, so you do not need to reconfigure your
+Lovelace UI or automations.
 
-> **ВНИМАНИЕ!**  
-> При добавлении объектов, компонент в отдельных случаях проверяет поддержку
-> функционала конечным устройством.
-> Во избежание неожиданных ситуаций, Вы можете ознакомиться с таблицами
-> поддержки на официальном сайте Pandora:
-> [ссылка на документ](https://alarmtrade.ru/service/sravnitelnye-tablitsy-sistem-pandora-i-pandect/).
+> **Important:** When adding some entities, the integration checks whether the
+> device supports the feature. To avoid surprises, consult the compatibility
+> tables on the official Pandora website:
+> [compatibility document](https://alarmtrade.ru/service/sravnitelnye-tablitsy-sistem-pandora-i-pandect/).
 
-> **ПРЕДУПРЕЖДЕНИЕ!**  
-> Общее количество различных объектов, доступных в компоненте, в скором времени
-> перевалит за 40.
-> Ввиду этого, по умолчанию отключены объекты, встречающиеся наиболее редко,
-> такие как:
-> - Состояние зарядки и температура аккумулятора гибридных/электрических
-    автомобилей
-> - Состояние поднятости стёкол и давление в шинах (TPMS), получаемые по
-    CAN-шине
+> **Warning:** The total number of available entity types will soon exceed 40.
+> Less common entities are therefore disabled by default, including:
 >
-> Такие объекты помечаются символом "&#9888;" в таблицах ниже. Если Вы уверены,
-> что Ваш автомобиль
-> вкупе с установленной на нём системой поддерживают данные функции, то Вы
-> можете включить
-> перечисленные объекты следуя инструкции [выше](#integration_entities_control).
+> - Hybrid/EV battery charging status and temperature.
+> - Window position and tire pressure (TPMS) received over the CAN bus.
+>
+> These entities are marked with "&#9888;" in the tables below. If your vehicle
+> and its alarm system support these features, enable the entities using the
+> [instructions above](#integration_entities_control).
 
-### Платформа `sensor`
+### `sensor` platform
 
 <a id="platform_sensor"></a>
 
-| Объект                                                     | Назначение                             | Примечание     |
+| Entity | Purpose | Notes |
 |------------------------------------------------------------|----------------------------------------|----------------|
-| sensor.`PANDORA_ID`_mileage                                | Пробег сигнализации (по GPS)           | км             |
-| sensor.`PANDORA_ID`_can_mileage                            | Пробег штатного одометра (по шине CAN) | км             |
-| sensor.`PANDORA_ID`_fuel                                   | Наполненность топливом <sup>1</sup>    | %              |
-| sensor.`PANDORA_ID`_interior_temperature                   | Температура салона                     | °C             |
-| sensor.`PANDORA_ID`_engine_temperature                     | Температура двигателя                  | °C             |
-| sensor.`PANDORA_ID`_exterior_temperature                   | Уличная температура                    | °C             |
-| sensor.`PANDORA_ID`_battery_temperature                    | Температура аккумулятора               | °C             |
-| sensor.`PANDORA_ID`_balance                                | Баланс СИМ-карты                       | Валюта баланса |
-| sensor.`PANDORA_ID`_speed                                  | Скорость                               | км/ч           |
-| sensor.`PANDORA_ID`_tachometer                             | Тахометр (обороты двигателя)           | rpm            |
-| sensor.`PANDORA_ID`_gsm_level                              | Уровень сигнала GSM                    | 0 ... 3        |
-| sensor.`PANDORA_ID`_battery_voltage                        | Напряжение аккумулятора                | V              |
-| sensor.`PANDORA_ID`_last_online                            | Последний выход на связь               | Метка времени  |
-| sensor.`PANDORA_ID`_last_state_update                      | Последнее получение обновления         | Метка времени  |
-| sensor.`PANDORA_ID`_last_settings_change                   | Последнее изменение настроек системы   | Метка времени  |
-| sensor.`PANDORA_ID`_last_command_execution                 | Последнее выполнение команды           | Метка времени  |
-| &#9888;&nbsp;sensor.`PANDORA_ID`_balance_secondary         | _Баланс дополнительной СИМ-карты_      | Валюта баланса |
-| &#9888;&nbsp;sensor.`PANDORA_ID`_can_mileage_to_empty      | _Пробег до пустого бака (по шине CAN)_ | км             |
-| &#9888;&nbsp;sensor.`PANDORA_ID`_left_front_tire_pressure  | _Давление левой передней шины_         | кПа _(?)_      |
-| &#9888;&nbsp;sensor.`PANDORA_ID`_right_front_tire_pressure | _Давление правой передней шины_        | кПа _(?)_      |
-| &#9888;&nbsp;sensor.`PANDORA_ID`_left_back_tire_pressure   | _Давление левой задней шины_           | кПа _(?)_      |
-| &#9888;&nbsp;sensor.`PANDORA_ID`_right_back_tire_pressure  | _Давление правой задней шины_          | кПа _(?)_      |
-| &#9888;&nbsp;sensor.`PANDORA_ID`_reserve_tire_pressure     | _Давление правой задней шины_          | кПа _(?)_      |
+| sensor.`PANDORA_ID`_mileage | GPS mileage reported by the alarm system | km |
+| sensor.`PANDORA_ID`_can_mileage | Factory odometer mileage (CAN bus) | km |
+| sensor.`PANDORA_ID`_fuel | Fuel level <sup>1</sup> | % |
+| sensor.`PANDORA_ID`_interior_temperature | Interior temperature | °C |
+| sensor.`PANDORA_ID`_engine_temperature | Engine temperature | °C |
+| sensor.`PANDORA_ID`_exterior_temperature | Exterior temperature | °C |
+| sensor.`PANDORA_ID`_battery_temperature | Battery temperature | °C |
+| sensor.`PANDORA_ID`_balance | SIM card balance | Account currency |
+| sensor.`PANDORA_ID`_speed | Speed | km/h |
+| sensor.`PANDORA_ID`_tachometer | Tachometer (engine speed) | rpm |
+| sensor.`PANDORA_ID`_gsm_level | GSM signal strength | 0 ... 3 |
+| sensor.`PANDORA_ID`_battery_voltage | Battery voltage | V |
+| sensor.`PANDORA_ID`_last_online | Last connection | Timestamp |
+| sensor.`PANDORA_ID`_last_state_update | Last state update | Timestamp |
+| sensor.`PANDORA_ID`_last_settings_change | Last system settings change | Timestamp |
+| sensor.`PANDORA_ID`_last_command_execution | Last command execution | Timestamp |
+| &#9888;&nbsp;sensor.`PANDORA_ID`_balance_secondary | _Secondary SIM card balance_ | Account currency |
+| &#9888;&nbsp;sensor.`PANDORA_ID`_can_mileage_to_empty | _Distance to empty (CAN bus)_ | km |
+| &#9888;&nbsp;sensor.`PANDORA_ID`_left_front_tire_pressure | _Front left tire pressure_ | kPa _(?)_ |
+| &#9888;&nbsp;sensor.`PANDORA_ID`_right_front_tire_pressure | _Front right tire pressure_ | kPa _(?)_ |
+| &#9888;&nbsp;sensor.`PANDORA_ID`_left_back_tire_pressure | _Rear left tire pressure_ | kPa _(?)_ |
+| &#9888;&nbsp;sensor.`PANDORA_ID`_right_back_tire_pressure | _Rear right tire pressure_ | kPa _(?)_ |
+| &#9888;&nbsp;sensor.`PANDORA_ID`_reserve_tire_pressure | _Rear right tire pressure_ | kPa _(?)_ |
 
-### Платформа `binary_sensor`
+### `binary_sensor` platform
 
 <a id="platform_binary_sensor"></a>
 
-| Объект                                                        | Назначение                                        | Примечание                |
+| Entity | Purpose | Notes |
 |---------------------------------------------------------------|---------------------------------------------------|---------------------------|
-| binary_sensor.`PANDORA_ID`_connection_state                   | Связь с автомобилем<sup>1</sup>                   | есть / нет                |
-| binary_sensor.`PANDORA_ID`_moving                             | Статус движения                                   | в движении / без движения |
-| binary_sensor.`PANDORA_ID`_left_front_door                    | Левая передняя дверь                              | открыта / закрыта         |
-| binary_sensor.`PANDORA_ID`_right_front_door                   | Правая передняя дверь                             | открыта / закрыта         |
-| binary_sensor.`PANDORA_ID`_left_back_door                     | Левая задняя дверь                                | открыта / закрыта         |
-| binary_sensor.`PANDORA_ID`_right_back_door                    | Правая задняя дверь                               | открыта / закрыта         |
-| binary_sensor.`PANDORA_ID`_trunk                              | Багажник                                          | открыт / закрыт           |
-| binary_sensor.`PANDORA_ID`_hood                               | Капот                                             | открыт / закрыт           |
-| binary_sensor.`PANDORA_ID`_parking                            | Режим паркнинга                                   | включен / выключен        |
-| binary_sensor.`PANDORA_ID`_brakes                             | Педаль тормоза                                    | нажата / отпущена         |
-| &#9888;&nbsp;binary_sensor.`PANDORA_ID`_left_front_glass      | _Левое переднее окно (водительское)<sup>2</sup>_  | открыто / закрыто         |
-| &#9888;&nbsp;binary_sensor.`PANDORA_ID`_right_front_glass     | _Правое переднее окно (пассажирское)<sup>2</sup>_ | открыто / закрыто         |
-| &#9888;&nbsp;binary_sensor.`PANDORA_ID`_left_back_glass       | _Левое заднее окно_                               | открыто / закрыто         |
-| &#9888;&nbsp;binary_sensor.`PANDORA_ID`_right_back_glass      | _Правое заднее окно_                              | открыто / закрыто         |
-| &#9888;&nbsp;binary_sensor.`PANDORA_ID`_ev_charging_connected | _Зарядка аккумулятора электрокара_                | подключено / отключено    |
+| binary_sensor.`PANDORA_ID`_connection_state | Vehicle connection<sup>1</sup> | connected / disconnected |
+| binary_sensor.`PANDORA_ID`_moving | Movement status | moving / stationary |
+| binary_sensor.`PANDORA_ID`_left_front_door | Front left door | open / closed |
+| binary_sensor.`PANDORA_ID`_right_front_door | Front right door | open / closed |
+| binary_sensor.`PANDORA_ID`_left_back_door | Rear left door | open / closed |
+| binary_sensor.`PANDORA_ID`_right_back_door | Rear right door | open / closed |
+| binary_sensor.`PANDORA_ID`_trunk | Trunk | open / closed |
+| binary_sensor.`PANDORA_ID`_hood | Hood | open / closed |
+| binary_sensor.`PANDORA_ID`_parking | Parking mode | on / off |
+| binary_sensor.`PANDORA_ID`_brakes | Brake pedal | pressed / released |
+| &#9888;&nbsp;binary_sensor.`PANDORA_ID`_left_front_glass | _Front left window (driver)<sup>2</sup>_ | open / closed |
+| &#9888;&nbsp;binary_sensor.`PANDORA_ID`_right_front_glass | _Front right window (passenger)<sup>2</sup>_ | open / closed |
+| &#9888;&nbsp;binary_sensor.`PANDORA_ID`_left_back_glass | _Rear left window_ | open / closed |
+| &#9888;&nbsp;binary_sensor.`PANDORA_ID`_right_back_glass | _Rear right window_ | open / closed |
+| &#9888;&nbsp;binary_sensor.`PANDORA_ID`_ev_charging_connected | _EV battery charging_ | connected / disconnected |
 
-<sup>1</sup> Данный объект содержит полный перечень свойств, получаемых в момент
-обновления состояния автомобиля,
-и тем самым может быть запросто использован для `template`-выражений.  
-<sup>2</sup> Компонент не тестировался для праворульных транспортных средств.
-Может возникнуть
-ситуация, что из коробки данные сенсоры перепутаны местами.
+<sup>1</sup> This entity contains the full set of properties received when the
+vehicle state is updated and can be used in `template` expressions.<br>
+<sup>2</sup> The integration has not been tested with right-hand-drive vehicles.
+These sensors may be swapped by default.
 
-### Платформы `lock` и `switch`
+### `lock` and `switch` platforms
 
 <a id="platform_lock"></a>
 <a id="platform_switch"></a>
 
-| Объект                              | Назначение                                     | Примечание                   |
+| Entity | Purpose | Notes |
 |-------------------------------------|------------------------------------------------|------------------------------|
-| lock.`PANDORA_ID`_central_lock      | Статус блокировки замка                        | разблокирован / заблокирован |
-| switch.`PANDORA_ID`_active_security | Статус активной защиты                         | включена / выключена         |
-| switch.`PANDORA_ID`_coolant_heater  | Статус предпускового подогревателя             | включен / выключен           |
-| switch.`PANDORA_ID`_engine          | Статус двигателя                               | запущен / заглушен           |
-| switch.`PANDORA_ID`_tracking        | Статус отслеживания (GPS-трек)                 | включен / выключен           |
-| switch.`PANDORA_ID`_service_mode    | Режим сервиса (обслуживания)                   | включен / выключен           |
-| switch.`PANDORA_ID`_ext_channel     | Дополнительный канал <sup>3</sup>              | включить / выключить         |
-| switch.`PANDORA_ID`_status_output   | Статусный выход (для нештатных иммобилайзеров) | включить / выключить         |
+| lock.`PANDORA_ID`_central_lock | Central locking status | unlocked / locked |
+| switch.`PANDORA_ID`_active_security | Active security status | on / off |
+| switch.`PANDORA_ID`_coolant_heater | Coolant heater status | on / off |
+| switch.`PANDORA_ID`_engine | Engine status | running / stopped |
+| switch.`PANDORA_ID`_tracking | Tracking status (GPS track) | on / off |
+| switch.`PANDORA_ID`_service_mode | Service (maintenance) mode | on / off |
+| switch.`PANDORA_ID`_ext_channel | Auxiliary channel <sup>3</sup> | enable / disable |
+| switch.`PANDORA_ID`_status_output | Status output (for aftermarket immobilizers) | enable / disable |
 
-<sup>3</sup> Состояние не остслеживается
+<sup>3</sup> The state is not monitored.
 
-### Платформа `button`
+### `button` platform
 
 <a id="platform_button"></a>
 
-| Объект                                   | Назначение                        | Примечание |
+| Entity | Purpose | Notes |
 |------------------------------------------|-----------------------------------|------------|
-| switch.`PANDORA_ID`_erase_errors         | Очистка кодов ошибок              |            |
-| switch.`PANDORA_ID`_read_errors          | Считывание кодов ошибок           |            |
-| switch.`PANDORA_ID`_trigger_horn         | Статус двигателя                  |            |
-| switch.`PANDORA_ID`_trigger_light        | Статус отслеживания (GPS-трек)    |            |
-| switch.`PANDORA_ID`_trigger_trunk        | Режим сервиса (обслуживания)      |            |
-| switch.`PANDORA_ID`_check                | Дополнительный канал <sup>3</sup> |            |
-| switch.`PANDORA_ID`_additional_command_1 | Дополнительная команда №1         |            |
-| switch.`PANDORA_ID`_additional_command_2 | Дополнительная команда №2         |            |
+| switch.`PANDORA_ID`_erase_errors | Clear fault codes |  |
+| switch.`PANDORA_ID`_read_errors | Read fault codes |  |
+| switch.`PANDORA_ID`_trigger_horn | Engine status |  |
+| switch.`PANDORA_ID`_trigger_light | Tracking status (GPS track) |  |
+| switch.`PANDORA_ID`_trigger_trunk | Service (maintenance) mode |  |
+| switch.`PANDORA_ID`_check | Auxiliary channel <sup>3</sup> |  |
+| switch.`PANDORA_ID`_additional_command_1 | Additional command No. 1 |  |
+| switch.`PANDORA_ID`_additional_command_2 | Additional command No. 2 |  |
 
-### Платформа `device_tracker`
+### `number` platform
+
+<a id="platform_number"></a>
+
+Number entities provide climate control adjustments.
+
+### `device_tracker` platform
 
 <a id="platform_device_tracker"></a>
 
-Для каждого автомобиля будет создан объект device_tracker.pandora_`PANDORA_ID`,
-где
-`PANDORA_ID` уникальный идентификатор автомобиля в системе Pandora. Доступны все
-обычные действия для Device Tracker: отслеживание местоположения
-[на карте](https://www.home-assistant.io/lovelace/map/),
-[трекинг пути](https://www.home-assistant.io/blog/2020/04/08/release-108/#lovelace-map-history),
-[контроль зон](https://www.home-assistant.io/docs/automation/trigger/#zone-trigger)
-и т.д.
+A `device_tracker.pandora_PANDORA_ID` entity is created for each vehicle, where
+`PANDORA_ID` is its unique ID in the Pandora system. Standard Device Tracker
+features are available, including location tracking
+[on a map](https://www.home-assistant.io/lovelace/map/),
+[route history](https://www.home-assistant.io/blog/2020/04/08/release-108/#lovelace-map-history),
+and [zone monitoring](https://www.home-assistant.io/docs/automation/trigger/#zone-trigger).
 
 <details>
-  <summary>Пример отображения маркера на карте (цвет, поворот)</summary>
-  <img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_map_marker.png" alt="Скриншот: Маркер автомобиля с поворотом на карте Home Assistant">
+  <summary>Example map marker (color and rotation)</summary>
+  <img src="https://raw.githubusercontent.com/alryaz/hass-pandora-cas/master/images/screenshot_map_marker.png" alt="Screenshot: Rotated vehicle marker on the Home Assistant map">
 </details>
 
-Объект обладает следующими атрибутами:
+The entity has the following attributes:
 
-| Параметр  |   Тип   | Описание                       |
+| Parameter | Type | Description |
 |-----------|:-------:|--------------------------------|
-| latitude  | `float` | Широта                         |
-| longitude | `float` | Долгота                        |
-| device_id |  `int`  | Идентификатор устройства       |
-| direction |  `int`  | Направление (в градусах)       |
-| cardinal  |  `str`  | Направление (в сторонах света) |
+| latitude | `float` | Latitude |
+| longitude | `float` | Longitude |
+| device_id | `int` | Device ID |
+| direction | `int` | Direction (degrees) |
+| cardinal | `str` | Direction (compass point) |
 
-## События
+## Events
 
 <a id="events_supported"></a>
 
-За период наблюдения компонентом за автомобилем могут происходить некоторые
-события, чьи
-свойства не позволяют сделать из них удобные к использованию объекты
-платформ `sensor`,
-`binary_sensor` и пр. Ввиду этого, для поддержки дополнительных событий введены
-два новых
-внутренних делегата:
+Some events observed while monitoring the vehicle do not map conveniently to
+`sensor`, `binary_sensor`, or similar entities. Two internal event types provide
+access to these additional events.
 
-### Делегат событий `pandora_cas_event`
+### `pandora_cas_event` events
 
-Данное событие делегирует информацию из системы Pandora прямиком в Home
-Assistant. Следующие данные
-будут доступны при получении события:
+This event forwards information from the Pandora system directly to Home
+Assistant. The following data is available in the event:
 
-| Параметр             |      Тип      | Описание                        |
+| Parameter | Type | Description |
 |----------------------|:-------------:|---------------------------------|
-| device_id            |     `int`     | Идентификатор устройства        |
-| event_id_primary     |     `int`     | Первичный код события           |
-| event_id_secondary   |     `int`     | Вторичный код события           |
-| title_primary        | `str`, `None` | Заглавное наименование события  |
-| title_primary        | `str`, `None` | Уточняющее наименование события |
-| event_type           |     `str`     | Код типа события                |
-| latitude             |    `float`    | Широта                          | 
-| longitude            |    `float`    | Долгота                         |
-| gsm_level            |     `int`     | Уровень связи                   |
-| fuel                 |     `int`     | Уровень топлива                 |
-| exterior_temperature |     `int`     | Температура за бортом           |
-| engine_temperature   |     `int`     | Температура двигателя           |
+| device_id | `int` | Device ID |
+| event_id_primary | `int` | Primary event code |
+| event_id_secondary | `int` | Secondary event code |
+| title_primary | `str`, `None` | Primary event title |
+| title_primary | `str`, `None` | Secondary event title |
+| event_type | `str` | Event type code |
+| latitude | `float` | Latitude |
+| longitude | `float` | Longitude |
+| gsm_level | `int` | Signal strength |
+| fuel | `int` | Fuel level |
+| exterior_temperature | `int` | Exterior temperature |
+| engine_temperature | `int` | Engine temperature |
 
-Код типа события является строкой, которая поверхностно описывает смысл события
-(на английском языке). Полным списком кодов (кодификатором) возможно обзавестись
-в файле
-`api.py` проекта.
+The event type code is an English string that briefly describes the event.
+The original documentation refers to the project's `api.py` file for the full
+list of codes. See also the [event ID reference](DATA.md).
 
-### Делегат событий `pandora_cas_command`
+### `pandora_cas_command` events
 
-Для всех команд будут выполняться события-уведомители. Данные события содержат
-следующие данные:
+Notification events are emitted for all commands. They contain the following data:
 
-| Параметр   |  Тип  | Описание                                                           |
+| Parameter | Type | Description |
 |------------|:-----:|--------------------------------------------------------------------|
-| device_id  | `int` | Идентификатор устройства                                           |
-| command_id | `int` | Номер команды _(см. раздел ниже)_                                  |
-| result     | `int` | Результат выполнения (`0` - успех, любое другое значение - ошибка) |
-| reply      | `int` | Код описания ошибки (больше нуля, если код доступен)               |
+| device_id | `int` | Device ID |
+| command_id | `int` | Command ID _(see below)_ |
+| result | `int` | Execution result (`0` = success; any other value = error) |
+| reply | `int` | Error description code (greater than zero if available) |
 
-## Команды / Службы
+## Commands / Services
 
 <a id="services_provided"></a>
 
-Ключевые команды включения/выключения определённых функций вынесены в отдельные
-переключаемые объекты
-(пр. `switch` и `lock`). Если же имеется потребность выступить за рамки
-предопределённых конфигураций,
-существуют два способа передать дополнительные команды на охранную систему.
+The main commands for enabling and disabling features are exposed as entities,
+such as `switch` and `lock`. To send commands beyond these predefined controls,
+there are two ways to address the alarm system.
 
-Для _именованого_ способа требуется вызов службы в
-формате `pandora_cas.<Постфикс>`:
+For a _named_ command, call a service in the form `pandora_cas.<suffix>`:
 
 ```yaml
-# Именованый способ вызова команд
+# Named command call
 - action: call-service
   service: pandora_cas.start_engine
   data:
     device_id: 1231234123
 ```
 
-Для _универсального_ способа идентификаторы команд (`command_id`) обязательно
-должны быть числовыми:
+For a _generic_ command, the command ID (`command_id`) must be numeric:
 
 ```yaml
-# Универсальный способ вызова команд
+# Generic command call
 - action: call-service
   service: pandora_cas.remote_command
   data:
@@ -438,40 +416,39 @@ Assistant. Следующие данные
     command_id: 1
 ```
 
-Для справки, ниже представлена таблица доступных к выполнению команд (
-сгруппированых по смысловому признаку):
+The available commands are listed below, grouped by purpose:
 
-|      ID | Постфикс                  | Действие                        | Примечание                                                  |
+| ID | Suffix | Action | Notes |
 |--------:|---------------------------|---------------------------------|-------------------------------------------------------------|
-|   **1** | `lock`                    | Поставить на охрану             | Может быть запрещено настройками блока сигнализации         |
-|   **2** | `unlock`                  | Снять с охраны                  | Может быть запрещено настройками блока сигнализации         |
-|   **4** | `start_engine`            | Запустить двигатель             |                                                             |
-|   **8** | `stop_engine`             | Остановить двигатель            |                                                             |
-|  **16** | `enable_tracking`         | Включить GPS-трекинг            | Поддерживается не всеми устройствами                        |
-|  **32** | `disable_tracking`        | Выключить GPS-трекинг           | Поддерживается не всеми устройствами                        |
-|  **17** | `enable_active_security`  | Включить активную безопасность  | Поддерживается не всеми устройствами                        |
-|  **18** | `disable_active_security` | Выключить активную безопасность | Поддерживается не всеми устройствами                        |
-|  **21** | `turn_on_coolant_heater`  | Включить преднагреватель        | Поддерживается не всеми устройствами                        |
-|  **22** | `turn_off_coolant_heater` | Выключить преднагреватель       | Поддерживается не всеми устройствами                        |
-|  **33** | `turn_on_ext_channel`     | Включить дополнительный канал   | Поддерживается не всеми устройствами                        |
-|  **34** | `turn_off_ext_channel`    | Выключить дополнительный канал  | Поддерживается не всеми устройствами                        |
-|  **40** | `enable_service_mode`     | Включить сервисный режим        |                                                             |
-|  **41** | `disable_service_mode`    | Выключить сервисный режим       |                                                             |
-|  **23** | `trigger_horn`            | Издать сигнал клаксона          |                                                             |
-|  **24** | `trigger_light`           | Включить освещение              |                                                             |
-| **255** | `check`                   | Команда CHECK                   | ?                                                           |
-| **100** | `additional_command_1`    | Дополнительная команда №1       | Настраивается инструментами конфигурации блока сигнализации |
-| **128** | `additional_command_2`    | Дополнительная команда №2       | Настраивается инструментами конфигурации блока сигнализации |
-| **240** | `enable_connection`       | Продлить период коммуникации    | ?                                                           |
-|  **15** | `disable_connection`      | Завершить период коммуникации   | ?                                                           |
-|  **48** | `enable_status_output`    | Выключение статусного выхода    | Подразумевается поддержка на стороне автомобиля             |
-|  **49** | `disable_status_output`   | Включение статусного выхода     | Подразумевается поддержка на стороне автомобиля             |
+| **1** | `lock` | Arm | May be prohibited by the alarm unit settings |
+| **2** | `unlock` | Disarm | May be prohibited by the alarm unit settings |
+| **4** | `start_engine` | Start engine |  |
+| **8** | `stop_engine` | Stop engine |  |
+| **16** | `enable_tracking` | Enable GPS tracking | Not supported by all devices |
+| **32** | `disable_tracking` | Disable GPS tracking | Not supported by all devices |
+| **17** | `enable_active_security` | Enable active security | Not supported by all devices |
+| **18** | `disable_active_security` | Disable active security | Not supported by all devices |
+| **21** | `turn_on_coolant_heater` | Switch on coolant heater | Not supported by all devices |
+| **22** | `turn_off_coolant_heater` | Switch off coolant heater | Not supported by all devices |
+| **33** | `turn_on_ext_channel` | Enable auxiliary channel | Not supported by all devices |
+| **34** | `turn_off_ext_channel` | Disable auxiliary channel | Not supported by all devices |
+| **40** | `enable_service_mode` | Enable service mode |  |
+| **41** | `disable_service_mode` | Disable service mode |  |
+| **23** | `trigger_horn` | Sound horn |  |
+| **24** | `trigger_light` | Flash lights |  |
+| **255** | `check` | CHECK command | ? |
+| **100** | `additional_command_1` | Additional command No. 1 | Configured using the alarm unit configuration tools |
+| **128** | `additional_command_2` | Additional command No. 2 | Configured using the alarm unit configuration tools |
+| **240** | `enable_connection` | Extend communication period | ? |
+| **15** | `disable_connection` | End communication period | ? |
+| **48** | `enable_status_output` | Disable status output | Requires support on the vehicle side |
+| **49** | `disable_status_output` | Enable status output | Requires support on the vehicle side |
 
-### Примеры использования команд
+### Command examples
 
 <a id="service_examples"></a>
 
-Вкладка с кнопкой запуска двигателя
+A dashboard tab with an engine start button:
 
 ```yaml
   - badges: [ ]
@@ -482,7 +459,7 @@ Assistant. Следующие данные
           data:
             id: 1234567890
         icon: 'mdi:fan'
-        name: Запуск двигателя
+        name: Start engine
         show_icon: true
         show_name: true
         tap_action:
@@ -494,13 +471,14 @@ Assistant. Следующие данные
     title: Honda Pilot
 ```
 
-Автоматизация включения доп. канала по событию с условиями. Подробнее
-см. [пример использования](https://www.drive2.ru/l/526540176697066100/).
+An automation that enables the auxiliary channel when an event occurs and the
+conditions are met. See the
+[usage example](https://www.drive2.ru/l/526540176697066100/) for details.
 
 ```yaml
-# Фрагмент файла automations.yaml
+# Excerpt from automations.yaml
 - id: switch_on_pilot_seat_heaters
-  alias: Включить подогрев сидений
+  alias: Turn on seat heaters
   trigger:
     platform: state
     entity_id: binary_sensor.1234567890_engine_state
@@ -521,30 +499,30 @@ Assistant. Следующие данные
       id: 1234567890
 ```
 
-## Создание карточки устройства
+## Creating a device card
 
-Конфигурация существует трёх видов:
+Three configuration types are available:
 
-- [Карточка](https://github.com/alryaz/hass-pandora-cas/tree/master/interface/cards) (
-  содержит только графическое изображение транспортного средства)
-- [Стек](https://github.com/alryaz/hass-pandora-cas/tree/master/interface/stacks) (
-  карточка + элементы управления + сенсоры)
-- [Панель](https://github.com/alryaz/hass-pandora-cas/tree/master/interface/dashboards) (
-  карта по левую сторону, стек по правую)
+- [Card](https://github.com/alryaz/hass-pandora-cas/tree/master/interface/cards):
+  A graphical representation of the vehicle only.
+- [Stack](https://github.com/alryaz/hass-pandora-cas/tree/master/interface/stacks):
+  A card, controls, and sensors.
+- [Dashboard](https://github.com/alryaz/hass-pandora-cas/tree/master/interface/dashboards):
+  A map on the left and a stack on the right.
 
-Чтобы подготовить собственную конфигурацию, выполните следующие действия:
+To prepare your own configuration:
 
-1. Открыть [папку с подготовленными конфигурациями](https://github.com/alryaz/hass-pandora-cas/tree/master/interface)
-2. Выбрать файл с желаемым типом конфигурации
-3. Скопировать содержимое файла в текстовый редактор
-4. Заменить все вхождения `REPLACE_WITH_PANDORA_ID` на идентификатор
-   автомобиля (`device_id` на сенсорах)
+1. Open the [prepared configurations directory](https://github.com/alryaz/hass-pandora-cas/tree/master/interface).
+2. Choose a file with the configuration type you want.
+3. Copy its contents into a text editor.
+4. Replace every occurrence of `REPLACE_WITH_PANDORA_ID` with your vehicle ID
+   (the `device_id` attribute on the sensors).
 
-## Отказ от ответственности
+## Disclaimer
 
-Данное программное обеспечение никак не связано и не одобрено ООО «НПО
-Телеметрия», владельца торговой марки Pandora. Используйте его на свой страх и
-риск. Автор ни при каких обстоятельствах не несет ответственности за порчу или
-утрату вашего имущества и возможного вреда в отношении третьих лиц.
+This software is not affiliated with or endorsed by NPO Telemetria LLC, the owner
+of the Pandora trademark. Use it at your own risk. Under no circumstances is the
+author liable for damage to or loss of your property, or for any harm to third
+parties.
 
-Все названия брендов и продуктов принадлежат их законным владельцам.
+All brand and product names belong to their respective owners.
